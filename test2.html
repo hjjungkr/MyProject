@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM WebSphere Homepage Builder V6.0.1 for Windows">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>一致する文字の有無を検索します</TITLE>
+<STYLE type="text/css">
+<!--
+H3{
+  color : maroon;
+  background-color : #ffd0d0;
+}
+.so-su{
+  font-size : 12px;
+  background-color : #fff7fb;
+}
+.smp{
+  background-color :"#f6ffff";
+  border-width : 1px;
+  border-style : groove;
+  border-color : #a7fcfa;
+}
+TH{
+  background-color : #ffe6e6;
+  text-align : left;
+}
+-->
+</STYLE>
+<SCRIPT language="JavaScript">
+<!--
+
+//検索
+function act(n){
+n = myform.input.value;
+for (var i=0; i < n.length; i++){
+kensaku = n.charAt(i);
+sin10 = "１６進数は0123456789ABCDEFabcdefで表示";
+if (sin10.indexOf(kensaku,0) == -1){　　//入力文字列の検索
+alert("一致しない文字があります。");return;
+		}
+	}
+	alert("一致します。");
+}
+// -->
+</SCRIPT></HEAD>
+<BODY>
+<H3>&nbsp;&nbsp;&nbsp;<A href="../java_top.html">戻る</A></H3>
+<CENTER>
+<TABLE cellpadding="5" width="500" height="100" class="smp">
+  <CAPTION><B><FONT color="#000099">一致する文字の有無を検索します。<BR>
+  </FONT></B></CAPTION>
+  <TBODY>
+    <TR>
+      <TD align="center">検索文字：<FONT color="#009900">１６進数は0123456789ABCDEFabcdefで表記。</FONT>
+      <FORM name="myform" style="cursor : pointer;">
+      <TABLE>
+        <TBODY>
+          <TR>
+            <TD>値を入力： <INPUT type="text" name="input" value="" size="12" title="入力して下さい。"> <INPUT type="button" value="検索" onclick="act()"></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      </FORM>
+      </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+<P><BR>
+</P>
+<HR>
+</BODY>
+</HTML>
